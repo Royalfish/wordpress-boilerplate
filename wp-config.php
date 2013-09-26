@@ -1,7 +1,7 @@
 <?php
 
 /** Load the environment specific configuration file. */
-require_once(dirname(__FILE__ . '/wp-config-local.php'));
+require_once(dirname(__FILE__) . '/wp-config-local.php');
 
 /** Absolute path to the WordPress directory. */
 if (!defined('ABSPATH'))
