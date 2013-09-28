@@ -64,3 +64,10 @@ define('NONCE_SALT',       'put your unique phrase here');
  * in their development environments.
  */
 define('WP_DEBUG', false);
+
+/**
+ * For local development it is very convenient to install plugins right from the admin.
+ * The default behaviour for Wordpress is that it is uploaded through FTP. In order to 
+ * directly put the file on local filesystem directly, uncomment the following line.
+ */
+// define('FS_METHOD', 'direct');
