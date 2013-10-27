@@ -25,6 +25,7 @@ Updating the wordpress version is as simple as checking out a new version from t
 
     cd wordpress-boilerplate
     cd wordpress
+    git fetch --tags
     git fetch
     git checkout <tag-name>
     git commit -m "Updating wordpress to <tag-name>"
