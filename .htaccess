@@ -1,16 +1,12 @@
+
+# BEGIN WordPress
 <IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /
-
-    # BEGIN Royalfish-wordpress-boilerplate
-    # Hack required, because WP can overwrite it to omit the wordpress directories. See: https://github.com/Royalfish/wordpress-boilerplate/issues/1
-    RewriteRule ^$ wordpress/index.php [L]
-
-    # Skip real files and directories
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-
-    # Otherwise send it to WordPress
-    RewriteRule .* wordpress/index.php [L]
-    # END Royalfish-wordpress-boilerplate
+RewriteEngine On
+RewriteBase /
+RewriteRule ^$ /wordpress/index.php [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /wordpress/index.php [L]
 </IfModule>
+
+# END WordPress
