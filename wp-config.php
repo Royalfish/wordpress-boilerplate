@@ -8,7 +8,7 @@ if (!defined('ABSPATH'))
 	define('ABSPATH', dirname(__FILE__) . '/wordpress/');
 
 if (!defined('WP_HOME'))
-	define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
+	define('WP_HOME', 'http://' . WP_HTTP_HOST);
 
 if (!defined('WP_CONTENT_DIR'))
 	define('WP_CONTENT_DIR', realpath(ABSPATH . '../wp-content/'));
@@ -17,7 +17,7 @@ if (!defined('WP_CONTENT_URL'))
 	define('WP_CONTENT_URL', WP_HOME . '/wp-content');
 
 if (!defined('WP_SITEURL'))
-	define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/wordpress');
+	define('WP_SITEURL', WP_HOME . '/wordpress');
 
 // not allowed to override as it is really specific to this git based wordpress installation.
 define('UPLOADS', '../uploads');

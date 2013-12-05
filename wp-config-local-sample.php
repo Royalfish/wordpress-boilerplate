@@ -36,6 +36,9 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+// ** Host settings ** //
+define('WP_HTTP_HOST', 'domain.com');
+
 /**
  * Starting with Wordpress 3.7, minor and security updates are rolled out automatically. Detailed information can be
  * found here: http://make.wordpress.org/core/2013/10/25/the-definitive-guide-to-disabling-auto-updates-in-wordpress-3-7/
