@@ -88,6 +88,14 @@ define('NONCE_SALT',       'put your unique phrase here');
 define('WP_DEBUG', false);
 
 /**
+ * For developers: Save queries
+ *
+ * Set this to true in order to save the database queries which have been
+ * executed. The debug-bar extension shows the executed queries in it's interface.
+ */
+define('SAVEQUERIES', false);
+
+/**
  * For local development it is very convenient to install plugins right from the admin.
  * The default behaviour for Wordpress is that it is uploaded through FTP. In order to 
  * directly put the file on local filesystem directly, uncomment the following line.
